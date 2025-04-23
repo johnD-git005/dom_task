@@ -6,7 +6,7 @@
     <title>DOM Task</title>
     <style>
         body {
-            
+            background-color: black;
         }
 
         .main_class h1 {
@@ -14,6 +14,7 @@
             font-family: 'Courier New', Courier, monospace;
             letter-spacing: 1rem;
             font-size: 30px;
+            color: white;
         }
 
         #main_id {
@@ -26,6 +27,11 @@
             font-size: 20px;
             font: bolder;
             letter-spacing: 2px;
+            border: 1px solid #bba3ce;
+            color: white;
+            padding: 30px;
+            width: 500px;
+            justify-self: center;
         }
 
         #unorderedListA {
@@ -33,12 +39,22 @@
             font-size: 20px;
             font: bolder;
             letter-spacing: 2px;
+            border: 1px solid #bba3ce;
+            color: white;
+            padding: 30px;
+            width: 1000px;
+            justify-self: center;
         }
 
         #hobby {
             font-size: 20px;
             text-align: center;
             letter-spacing: 1rem;
+            color: white;
+        }
+
+        .subcontainer {
+            /* padding: 20px; */
         }
 
         
@@ -48,16 +64,28 @@
 </head>
 <body>
     <script>
+
+        // CONTAINER
+
         let container = document.createElement ("section")
         container.id = "main_id"
         container.className = "main_class"
 
+
+        // HEADING
+
         container.innerHTML = "<h1>PERSONAL INFORMATION</h1>"
 
+
+        // DIV FOR UNORDEREDLIST
+
+        let subContainer = document.createElement ("div")
+        subContainer.className = "subcontainer"
+        container.appendChild (subContainer)
         
         let unList = document.createElement ("ul")
         unList.id = "unorderedList"
-        container.appendChild (unList)
+        subContainer.appendChild (unList)
 
 
         let list1 = document.createElement ("li")
