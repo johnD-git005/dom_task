@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Task</title>
+    <style>
+        body {
+            
+        }
+
+        .main_class h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 1rem;
+            font-size: 30px;
+        }
+
+        #main_id {
+
+        }
+
+        #unorderedList {
+            list-style: none;
+            line-height: 2;
+            font-size: 20px;
+            font: bolder;
+            letter-spacing: 2px;
+        }
+
+        #unorderedListA {
+            line-height: 2;
+            font-size: 20px;
+            font: bolder;
+            letter-spacing: 2px;
+        }
+
+        #hobby {
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1rem;
+        }
+
+        
+
+
+    </style>
 </head>
 <body>
     <script>
@@ -15,28 +56,64 @@
 
         
         let unList = document.createElement ("ul")
-        unList.id = ""
+        unList.id = "unorderedList"
         container.appendChild (unList)
+
 
         let list1 = document.createElement ("li")
         list1.innerText = "Full Name: John Dakshak"
         unList.appendChild (list1)
 
+
         let list2 = document.createElement ("li")
         list2.innerText = "Gender: Male"
         unList.appendChild (list2)
+
 
         let list3 = document.createElement ("li")
         list3.innerText = "Phone: 09035393958"
         unList.appendChild (list3)
 
+
         let list4 = document.createElement ("li")
         list4.innerText = "email: johndakshak@gmail.com"
         unList.appendChild (list4)
 
+
         let list5 = document.createElement ("li")
         list5.innerText = "Address: Rayfield"
         unList.appendChild (list5)
+
+
+        let hobbies = document.createElement ("h2")
+        hobbies.innerHTML = "<h2>HOBBIES</h2>"
+        hobbies.id = "hobby"
+        container.appendChild (hobbies)
+
+
+        let unList2 = document.createElement ("ul")
+        unList2.id = "unorderedListA"
+        container.appendChild (unList2)
+        
+
+        let listA = document.createElement ("li")
+        listA.innerText = "Coding: Programming, web development, or app development"
+        unList2.appendChild (listA)
+
+        let listB = document.createElement ("li")
+        listB.innerText = "Drawing: Sketching, cartooning, or illustration"
+        unList2.appendChild (listB)
+
+        let listC = document.createElement ("li")
+        listC.innerText = "Writing: Fiction, non-fiction, poetry, or journalism"
+        unList2.appendChild (listC)
+
+        let listD = document.createElement ("li")
+        listD.innerText = "Painting: Watercolor, oil, acrylic, or digital painting"
+        unList2.appendChild (listD)
+
+
+
 
 
         
