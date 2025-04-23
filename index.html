@@ -82,6 +82,8 @@
         let subContainer = document.createElement ("div")
         subContainer.className = "subcontainer"
         container.appendChild (subContainer)
+
+        // FIRST UNORDERED LIST
         
         let unList = document.createElement ("ul")
         unList.id = "unorderedList"
@@ -113,12 +115,16 @@
         unList.appendChild (list5)
 
 
+        // HOBBIES
+
         let hobbies = document.createElement ("h2")
         hobbies.innerHTML = "<h2>HOBBIES</h2>"
         hobbies.id = "hobby"
         container.appendChild (hobbies)
 
 
+        // SECOND UNORDERED LIST
+        
         let unList2 = document.createElement ("ul")
         unList2.id = "unorderedListA"
         container.appendChild (unList2)
@@ -140,14 +146,6 @@
         listD.innerText = "Painting: Watercolor, oil, acrylic, or digital painting"
         unList2.appendChild (listD)
 
-
-
-
-
-        
-        
-        
-        
         
 
         document.querySelector ("body").appendChild (container)
