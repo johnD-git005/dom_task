@@ -15,29 +15,35 @@
 
         
         let unList = document.createElement ("ul")
+        unList.id = ""
         container.appendChild (unList)
 
         let list1 = document.createElement ("li")
         list1.innerText = "Full Name: John Dakshak"
+        unList.appendChild (list1)
 
         let list2 = document.createElement ("li")
         list2.innerText = "Gender: Male"
+        unList.appendChild (list2)
 
         let list3 = document.createElement ("li")
         list3.innerText = "Phone: 09035393958"
+        unList.appendChild (list3)
 
         let list4 = document.createElement ("li")
         list4.innerText = "email: johndakshak@gmail.com"
-
-         let list5 = document.createElement ("li")
-        list5.innerText = "Address: Rayfield"
-
-
-        unList.appendChild (list1)
-        unList.appendChild (list2)
-        unList.appendChild (list3)
         unList.appendChild (list4)
+
+        let list5 = document.createElement ("li")
+        list5.innerText = "Address: Rayfield"
         unList.appendChild (list5)
+
+
+        
+        
+        
+        
+        
 
         document.querySelector ("body").appendChild (container)
     </script>
